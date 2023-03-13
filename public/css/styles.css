@@ -4,7 +4,10 @@
 }
 
 * {
+	box-sizing: border-box;
 	font-family: 'Patrick Hand', sans-serif;
+	color: #333333;
+	letter-spacing: 0.02em;
 }
 
 body {
@@ -30,6 +33,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	display: flex;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
 .content-container {
@@ -45,6 +49,25 @@ body {
 	margin-top: 0px;
 }
 
+h2 {
+	margin-bottom: 6px;
+}
+
+p, a {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+ul {
+	margin-block-start: 0px;
+}
+
 a {
-	color: blue;
+	color: #0969da;
+}
+
+@media screen and (max-width: 600px) {
+	.avatar {
+		width: 120px;
+	}
 }
